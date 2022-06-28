@@ -1,10 +1,31 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  for (i=0; i < word.length; i++) {
+
+      let j = word.length - 1;
+
+      if (word[i] !== word[j]) {
+        return false
+      } else {
+        j += 1
+      }
+      
+      return true
+  }
 }
 
 /* 
   Add your pseudocode here
 */
+
+const str = "madam"
+
+// take the firs letter of word
+
+// compare the letter with the last letter of the string
+// if it is the same, check the letter next to it
+// if it is not much, return false
+// if it is the last letter, return true
 
 /*
   Add written explanation of your solution here
